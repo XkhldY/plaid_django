@@ -39,7 +39,7 @@ def save_transactions_to_db(item_id, new_transactions):
         if account_value:
             accnts.filter(account_id=acc.account_id).update(
                 available_balance=account_value['available_balance'],
-                current_balace=account_value['current_balace'],
+                current_balace=account_value['current_balance'],
                 name=account_value['name'],
                 account_type=account_value['account_type'],
                 account_subtype=account_value['account_subtype']
